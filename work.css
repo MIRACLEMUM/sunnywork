@@ -49,6 +49,7 @@ header nav a:hover {
 .hero h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    background-color: green;
 }
 
 .hero .btn {
