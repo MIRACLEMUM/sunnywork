@@ -15,13 +15,16 @@ body {
     
 }
 
+
+
+
 /* Header */
 header {
     background-color: #555;
     color: white;
     padding: 20px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 header h1 {
@@ -135,6 +138,33 @@ header nav a:hover {
     font-size: 1em;
     line-height: 1.5;
 }
+
+.moving-text {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.moving-text p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+}
+
+/* Animation for moving text */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Start position off the screen on the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End position off the screen on the left */
+    }
+}
+
 
 /* About Us Section */
 .about-us {
